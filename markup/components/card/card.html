@@ -1,0 +1,50 @@
+<div class="card">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card__images">
+                <div class="fotorama"  data-nav="thumbs">
+                    {{#each images}}
+                        <img src="{{this}}" alt="">
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card__content">
+                <div class="card__title">
+                    {{title}}
+                </div>
+                <div class="card__date">
+                    {{date}}
+                </div>
+                <div class="card__tags">
+                    {{#each tags}}
+                        {{this}}
+                    {{/each}}
+                </div>
+                <div class="card__contribuion">
+                    <div class="card__contribuion-label">
+                        Первоначальный <br>
+                        взнос
+                    </div>
+                    <div class="card__contribuion-value">
+                        {{contribution}}
+                    </div>
+                </div>
+                <div class="card__price">
+                    <div class="card__price-label">
+                       Цена
+                    </div>
+                    <div class="card__price-value">
+                        {{price}}
+                    </div>
+                </div>
+
+                <div class="card__button">
+                    <button data-bs-toggle="modal" data-bs-target="#callback"> Узнать цену</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,16 @@
+.form {
+    &__field {
+        & + * {
+            margin-top: 20px;
+        }
+    }
+    &__input {
+        &:focus, &:active {
+            outline: none;
+        }
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 8px;
+    }
+}

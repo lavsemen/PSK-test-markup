@@ -1,0 +1,14 @@
+.cards {
+    &__item {
+        & + * {
+            margin-top: 40px;
+        }
+    }
+    @media (max-width: 768px) {
+        &__item {
+            & + * {
+                margin-top: 24px;
+            }
+        }
+    }
+}

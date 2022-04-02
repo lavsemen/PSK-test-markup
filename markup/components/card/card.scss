@@ -1,0 +1,104 @@
+.card {
+    background: #EFEAE4;
+    border: 1px solid #112331;
+    border-radius: 0;
+    position: relative;
+
+    &__content {
+        max-width: 384px;
+        font-weight: 500;
+    }
+    &__title {
+        font-size: 26px;
+        & + * {
+            margin-top: 26px;
+        }
+    }
+    &__tags {
+        & + * {
+            margin-top: 41px;
+        }
+    }
+
+    &__contribuion {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        justify-content: space-between;
+        padding-bottom: 9px;
+        border-bottom: 1px solid rgba(#7D7163, $alpha: 0.2);
+        & + * {
+            margin-top: 25px;
+        }
+        &-value {
+            font-size: 16px;
+        }
+    }
+    &__price {
+        font-size: 12px;
+        &-label {
+            & + * {
+                margin-top: 10px;
+            }
+        }
+        &-value {
+            font-size: 20px;
+        }
+        & + * {
+            margin-top: 43px;
+        }
+    }
+
+    &__button {
+       button {
+           width: 100%;
+           padding: 12px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background: #FF5E56;
+           color: #fff;
+           border: 0;
+           transition: .3s ease-in-out ;
+           &:hover {
+               background: #ff776f;
+           }
+       }
+    }
+
+    &__date {
+        font-size: 14px;
+        & + * {
+            margin-top: 32px;
+        }
+    }
+    &__tags {
+        font-size: 12px;
+    }
+    .row {
+        & > * {
+            padding: 40px;
+            &:first-child {
+                border-right: 1px solid #112331;
+
+            }
+            @media (max-width: 992px) {
+                &:first-child {
+                    border-right: 0;
+                }
+            }
+        }
+    }
+    .fotorama__nav--thumbs {
+        text-align: start;
+    }
+    .fotorama__thumb {
+        background: transparent;
+        border: 1px solid #E0E0E0;
+        img {
+            position: static;
+            width: 100% !important;
+            object-fit: contain;
+        }
+    }
+}
